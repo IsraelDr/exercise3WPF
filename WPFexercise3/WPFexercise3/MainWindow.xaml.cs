@@ -20,9 +20,15 @@ namespace WPFexercise3
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
+            printerName1.printerNameLabel.Content = "printer 1";
+            printerName2.printerNameLabel.Content = "printer 2";
+            printerName3.printerNameLabel.Content = "printer 3";
+
+
         }
     }
 }

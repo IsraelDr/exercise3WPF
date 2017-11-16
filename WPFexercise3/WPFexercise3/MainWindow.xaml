@@ -21,9 +21,9 @@
                 <ColumnDefinition Width="33*"/>
                 <ColumnDefinition Width="33*"/>
             </Grid.ColumnDefinitions>
-            <local:PrinterUserControl HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Column="2"/>
-            <local:PrinterUserControl Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto"/>
-            <local:PrinterUserControl HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Column="0"/>
+            <local:PrinterUserControl x:Name="printerName3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Column="2"/>
+            <local:PrinterUserControl x:Name="printerName2" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto"/>
+            <local:PrinterUserControl x:Name="printerName1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Column="0"/>
         </Grid>
         <Button Grid.ColumnSpan="2" Content="Print" x:Name="printButton" Grid.Row="1" FontSize="36" Margin="10"/>
     </Grid>
