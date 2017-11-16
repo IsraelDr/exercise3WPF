@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="WPFexercise3.PrinterUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFexercise3"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" BorderThickness="1" Width="Auto" Height="Auto" BorderBrush="Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Stretch" Width="auto" Grid.Row="2"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="pageLabel" Content="Pages: " Grid.Row="1"/>
+            <Label x:Name="inkLabel" Content="Ink: "/>
+            <ProgressBar x:Name="inkCountProgressBar" Grid.Column="1" Value="23" />
+            <Slider x:Name="pageCountSlider" Grid.Column="1"  Grid.Row="1" Value="200" Maximum="400"/>
+        </Grid>
+        <Image Grid.Row="0" Source="images/printer.jpg"/>
+        <Label x:Name="printerNameLabel" Content="printer Name" Grid.Row="1" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="RoyalBlue"/>
+
+    </Grid>
+</UserControl>
