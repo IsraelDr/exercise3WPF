@@ -26,6 +26,7 @@ namespace WPFexercise3
         /// </summary>
         public MainWindow()
         {
+             InitializeComponent();//u see it??
              InitializeComponent();//yfyj
             
             printerName1.printerNameLabel.Content = "printer 1";
@@ -33,6 +34,9 @@ namespace WPFexercise3
             printerName3.printerNameLabel.Content = "printer 3";
 
         }
+            
+           
+        
         
     }
     
