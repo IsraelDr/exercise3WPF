@@ -24,5 +24,17 @@ namespace WPFexercise3
         {
             InitializeComponent();
         }
+
+        private void UserControl_MouseEnter(object sender, MouseEventArgs e)
+        {
+            PrinterUserControl printEnter = sender as PrinterUserControl;
+            printEnter.printerNameLabel.FontSize = 25;
+        }
+
+        private void UserControl_MouseLeave(object sender, MouseEventArgs e)
+        {
+            PrinterUserControl printLeave = sender as PrinterUserControl;
+            printLeave.printerNameLabel.FontSize = 16;
+        }
     }
 }
