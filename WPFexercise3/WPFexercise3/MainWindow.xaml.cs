@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 namespace WPFexercise3
 {
+   
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -25,12 +26,14 @@ namespace WPFexercise3
         /// </summary>
         public MainWindow()
         {
-            InitializeComponent();
+             InitializeComponent();//yfyj
+            
             printerName1.printerNameLabel.Content = "printer 1";
             printerName2.printerNameLabel.Content = "printer 2";
             printerName3.printerNameLabel.Content = "printer 3";
 
-
         }
+        
     }
+    
 }
