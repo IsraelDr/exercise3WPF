@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 namespace WPFexercise3
 {
+   
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -22,7 +23,9 @@ namespace WPFexercise3
     {
         public MainWindow()
         {
-            InitializeComponent();
+             InitializeComponent();//yfyj
+            }
+            
              public partial class PrintUserControl1 : UserControl
              {
                   public PrintUserControl1()
@@ -42,21 +45,23 @@ namespace WPFexercise3
                   protected string printerName;
                   protected decimal inkCount;
                   protected int PageCount;
-               static int printerCount=0;
-               static int     MAX_Pagees=100;
-               static decimal MIN_ADD_INK = 10;
-               static decimal MAX_PRINT_INK = 100;
-
-              static int     MAX_PAGES = 400;
-              static decimal MIN_ADD_PAGE = 10;
-              static decimal MAX_PRINT_PAGES = 100;
-              
-              static Random rand = new Random();
+                  static int printerCount=0;
+                  static int     MAX_Pagees=100;
+                  static decimal MIN_ADD_INK = 10;
+                  static decimal MAX_PRINT_INK = 100;
+                  
+                  static int     MAX_PAGES = 400;
+                  static decimal MIN_ADD_PAGE = 10;
+                  static decimal MAX_PRINT_PAGES = 100;
+                  
+                  static Random rand = new Random();
 
 
 
 
              }
+        }
+        
     }
     
 }
