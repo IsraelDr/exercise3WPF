@@ -15,27 +15,18 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="1" HorizontalAlignment="Stretch" Height="auto"  VerticalAlignment="Stretch" Width="auto" Margin="0,0,-0.4,0">
+        <Grid x:Name="printersGrid" Grid.Column="1" HorizontalAlignment="Stretch" Height="auto"  VerticalAlignment="Stretch" Width="auto" Margin="0,0,-0.4,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="33*"/>
                 <ColumnDefinition Width="33*"/>
                 <ColumnDefinition Width="33*"/>
             </Grid.ColumnDefinitions>
-            <local:PrinterUserControl x:Name="printerName3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Column="2"/>
-            <local:PrinterUserControl x:Name="printerName2" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto"/>
             <local:PrinterUserControl x:Name="printerName1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Column="0"/>
+            <local:PrinterUserControl x:Name="printerName2" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto"/>
+            <local:PrinterUserControl x:Name="printerName3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Column="2"/>
+            
         </Grid>
-        <Button Grid.ColumnSpan="2" Content="Print" x:Name="printButton" Grid.Row="1" FontSize="36" Margin="10">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="#FF98EB49" Offset="1"/>
-                    <GradientStop Color="#FF67B421" Offset="0.038"/>
-                    <GradientStop Color="#FFBDF18D" Offset="0.525"/>
-                    <GradientStop Color="#FFC2EB9C" Offset="0.704"/>
-                    <GradientStop Color="#FFD0F1B2" Offset="0.909"/>
-                </LinearGradientBrush>
-            </Button.Background>
+        <Button Grid.ColumnSpan="2" Content="Print" x:Name="printButton" Grid.Row="1" FontSize="36" Margin="10" Click="printButton_Click">
         </Button>
     </Grid>
 </Window>
