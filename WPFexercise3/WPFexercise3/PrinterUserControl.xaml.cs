@@ -59,7 +59,10 @@ namespace WPFexercise3
             else
             {
                 if ((inkCount * 100) < 15 && (inkCount * 100) > 10)
-                    temp = new PrinterEventArgs(false,"", printerName);
+                {
+                    temp = new PrinterEventArgs(false, "Ink is Almost finished", printerName);
+                    pageMissing.Invoke(this, temp);
+                }
             }
         }
 
